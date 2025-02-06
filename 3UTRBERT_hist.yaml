@@ -1,0 +1,17 @@
+channels:
+- bioconda
+- conda-forge
+- pkgs/main
+- pytorch
+dependencies:
+- conda-forge::beautifulsoup4
+- dvc=3.55.2
+- dvclive=3.48.0
+- conda-forge::ipykernel
+- ipython
+- bioconda::pyranges
+- python=3.10
+- pytorch=2.5.0
+- pytorch-cuda=12.4
+- torchaudio=2.5.0
+- torchvision=0.20.0

@@ -1,0 +1,11 @@
+Set up the environment for the project by running the following commands:
+```bash
+  conda create -n 3UTRBERT --file 3UTRBERT_hist.yaml
+  conda activate 3UTRBERT
+  git clone https://github.com/yangyn533/3UTRBERT
+  ln -s $( readlink -f 3UTRBERT/functions/src/ ) scripts/ # this make importing certain functions possible
+  cd 3UTRBERT
+  sed -i 's/"pybedtools",/#"pybedtools",/g' setup.py # pybedtools is not installing properly this time around, but i don't think it's necessary for the project
+  python3 -m pip install --editable .
+  cd ..
+```
